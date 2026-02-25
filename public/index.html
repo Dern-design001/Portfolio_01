@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 { color: #333; }
+        .endpoint {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .endpoint a {
+            color: #0070f3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .endpoint a:hover { text-decoration: underline; }
+        .method {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .get { background: #61affe; color: white; }
+        .post { background: #49cc90; color: white; }
+        .put { background: #fca130; color: white; }
+        .delete { background: #f93e3e; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Portfolio API Endpoints</h1>
+    <p>Your backend API is live! Use these endpoints to manage your portfolio data.</p>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span>
+        <a href="/api/profile">/api/profile</a>
+        <p>Retrieve profile data</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method put">PUT</span>
+        <span>/api/profile</span>
+        <p>Update profile data</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span>
+        <a href="/api/projects">/api/projects</a>
+        <p>Get all projects</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method post">POST</span>
+        <span>/api/projects</span>
+        <p>Create a new project</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method put">PUT</span>
+        <span>/api/projects?id={id}</span>
+        <p>Update a project</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method delete">DELETE</span>
+        <span>/api/projects?id={id}</span>
+        <p>Delete a project</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span>
+        <a href="/api/ventures">/api/ventures</a>
+        <p>Get all ventures</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method post">POST</span>
+        <span>/api/ventures</span>
+        <p>Create a new venture</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method get">GET</span>
+        <a href="/api/milestones">/api/milestones</a>
+        <p>Get all milestones</p>
+    </div>
+    
+    <div class="endpoint">
+        <span class="method post">POST</span>
+        <span>/api/milestones</span>
+        <p>Create a new milestone</p>
+    </div>
+</body>
+</html>
